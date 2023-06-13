@@ -13,6 +13,5 @@ def authenticate_api():
 
     auth = tweepy.OAuthHandler(oauth_consumer_key, oauth_consumer_secret)
     auth.set_access_token(oauth_token, oauth_token_secret)
-
     api = tweepy.API(auth)
     return api
